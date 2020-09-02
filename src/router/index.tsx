@@ -8,7 +8,7 @@ const Home = lazy(() => import('src/pages/Home'));
 const Router: React.FC = () => (
   <Suspense fallback={<Loader />}>
     <Switch>
-      <Route path="/" exact component={Home} title="Cubic-Bezier Generator" />
+      <Route path="/" exact component={Home} title="Box-Shadow Generator" />
       <Redirect from="*" to="/" />
     </Switch>
   </Suspense>
