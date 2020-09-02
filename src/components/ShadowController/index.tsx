@@ -108,10 +108,10 @@ export default function ShadowController() {
           />
         </div>
 
-        <Subtitle>Get the Bezier !</Subtitle>
+        <Subtitle>Get the Shadow !</Subtitle>
         <Shadow
           onClick={() => {
-            let input = document.getElementById('bezier') as HTMLInputElement;
+            let input = document.getElementById('shadow') as HTMLInputElement;
             input.select();
             document.execCommand('copy');
             Notify('Copied to clipboard !!', 'success');
@@ -119,7 +119,7 @@ export default function ShadowController() {
         >
           <input
             type="text"
-            id="bezier"
+            id="shadow"
             readOnly
             value={`${shadow.offsetX}px ${shadow.offsetY}px ${shadow.blurRadius}px ${
               shadow.spreadRadius > 0 ? `${shadow.spreadRadius}px` : ''
